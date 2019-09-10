@@ -37,7 +37,7 @@ public class JsonReaderUtil {
 
     public static void main(String[] args)throws MalformedURLException, IOException {
         String sURL = "http://info.venturepulse.org:8080/service-webapp/api/AllEmployeeResources";
-        Employee emp = null;
+        Employee emp = new Employee();
         List<Employee> empList = new ArrayList<>();
         URL url = new URL(sURL);
         URLConnection request = url.openConnection();
@@ -55,10 +55,17 @@ public class JsonReaderUtil {
                 JsonObject jsonobject = jsonArray.get(i).getAsJsonObject();
                 //you code start here
                 String empEmail = jsonobject.get("empEmail").toString();
-                System.out.println(empEmail);
+                String empName = jsonobject.get("empName").toString();
+                String empSalary = jsonobject.get("salary").toString();
+                String empPosition = jsonobject.get("department").toString();
+                System.out.println(empEmail + " "+empName + " "+ empSalary+ " " + empPosition);
+                emp.setEmpEmail(empEmail);
+                emp.setEmpName(empName);
+                emp.setSalary(empSalary);
+                emp.setDepartment(empPosition);
 
             }catch(Exception ex){
-
+               
             }
         }
         //Print to the console.

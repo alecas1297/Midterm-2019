@@ -16,6 +16,22 @@ public class LowestNumber {
 
 		//find lowest number from the array
 
+		int smallest, size;
+		size = array.length;
+
+		for(int i = 0; i<size; i++ ){
+			for(int j = i+1; j<size; j++){
+				if(array[i]>array[j]){
+					smallest = array[i];
+					array[i] = array[j];
+					array[j] = smallest;
+				}
+			}
+		}
+		System.out.println("Smallest number of the array is: " + array[0]);
+
+
+
 		ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
 		List<String> lowestValue = new ArrayList<String>();
 		try {

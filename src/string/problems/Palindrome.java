@@ -9,6 +9,13 @@ public class Palindrome {
           Palindrome. So write java code to check if a given String is Palindrome or not.
          */
 
+        Palindrome.isPalindrome();
+
+
+
+    }
+
+    public static void isPalindrome() {
         String original, reverse = "";
         Scanner in = new Scanner(System.in);
 
@@ -24,7 +31,6 @@ public class Palindrome {
             System.out.println("The string is a palindrome.");
         else
             System.out.println("The string isn't a palindrome.");
-
     }
 
     }

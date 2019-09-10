@@ -43,5 +43,5 @@ public class Permutation {
         return String.valueOf(charArray);
     }
 }
-
+// ?serverTimezone=UTC&useSSL=false
 
