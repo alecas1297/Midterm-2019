@@ -1,34 +1,87 @@
 Please answer the below Data Structure Questions:
 
 why do we need data structure?
-A.
+A. In order to locate and retrieve  data it is required to have data in a structured form.Structured form of data makes
+   retrieval and manipulation easy.
+
 
 
 What are the various operations that can be performed on different Data Structures?
+- Searching, Insertion, Deletion, Merging, Traversing
+
 List out the areas in which data structures are applied extensively?
+- Operating System, Database Management System, Statistical Analysis Package, Numerical Analysis, Graphics, Artificial Intelligence, Simulation
+
 what is an Array?
+- An array in programming is a collection of data/value which has index associated with it.An array shall contain similar
+  types of data, an array can be sorted or un sorted.
+
 what is the difference between the Array and ArrayList?
+-
+
 what is LinkedList?
+-
+
 How is an Array different from Linked List?
+-
+
 what is queue?
+-
+
 what is stack?
+-
+
 what is FIFO and LIFO?
+- FIFO: First In, First Out
+LIFO: Last In, First Out
+
 what is the order of complexity?
+-
+
 what is the best case to search an element from an array?
+-
+
 what is the worst case to search an element from an array?
+-
+
 what is tree in data structure?
+-
+
 what is graph in data structure?
+-
+
 what is the difference between the HashTable and HashMap?
+-
+
 What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+-
+
 How HashMap works in java?
+-
+
 What is ArrayIndexOutOfBoundsException in java? When it occurs?
+-
+
 What are the different ways of copying an array into another array?
+-
+
 What is difference between an array and a linked list?
+-
+
 What is DFS and BFS?
+-
+
 What is Recursion?
+-
+
 What are linear and non linear data Structures?
+-
+
 What is Big-(O)-notation?
+-
+
 Outlined different kind of sorting algorithm with time complexity?
+-
 
 Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
   a)In terms of Accessing element.

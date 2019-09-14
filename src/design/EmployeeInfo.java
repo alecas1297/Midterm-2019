@@ -2,7 +2,7 @@ package design;
 
 import java.util.Scanner;
 
-public class EmployeeInfo extends EmployeeAbstractClass{
+public class EmployeeInfo extends EmployeeAbstractClass {
 	
  /*This class can be implemented from Employee interface then add additional methods in EmployeeInfo class.
  * Also, Employee interface can be implemented into an abstract class.So create an Abstract class
@@ -79,9 +79,11 @@ public class EmployeeInfo extends EmployeeAbstractClass{
 	public EmployeeInfo(int employeeId){
 		this.employeeId=employeeId;
 	}
+
     public EmployeeInfo(String name, int employeeId){
 		this.employeeId=employeeId;
 		empName =name;
+
 	}
 	public void describeCompany(String mission, String vision) {
 		System.out.println(mission);
@@ -91,6 +93,12 @@ public class EmployeeInfo extends EmployeeAbstractClass{
 		double yearlySalary = salary * 12;
 		return yearlySalary;
 	}
+
+	@Override
+	public void vacation() {
+
+	}
+
 	@Override
 	public int employeeId() {
 		return 0;
@@ -124,7 +132,7 @@ public class EmployeeInfo extends EmployeeAbstractClass{
 	 * So you probably need to send 2 arguments.
 	 * 
 	 */
-	public static int calculateEmployeeBonus(int numberOfYearsWithCompany){
+	public int calculateEmployeeBonus(int numberOfYearsWithCompany){
 		int total=0;
 		return total;
 	}
@@ -144,7 +152,10 @@ public class EmployeeInfo extends EmployeeAbstractClass{
 			yearlyBonus = 0;
 			System.out.println("You are fired.");
 		}
+		System.out.println("Total Bonus: " + yearlyBonus);
 		return yearlyBonus;
+
+
 	}
 
 	
@@ -154,7 +165,7 @@ public class EmployeeInfo extends EmployeeAbstractClass{
 	 * Hints: pension will be 5% of the salary for 1 year, 10% for 2 years with the company and so on.
 	 * 
 	 */
-	public static int calculateEmployeePension(int salary){
+	public int calculateEmployeePension(int salary){
 		int total=0;
 		Scanner sc  = new Scanner(System.in);
 		System.out.println("Please enter start date in format (example: May,2015): ");
@@ -190,6 +201,9 @@ public class EmployeeInfo extends EmployeeAbstractClass{
 		System.out.println("Total pension: $" + total);
 
 		return total;
+	}
+
+	public void describeCcompany() {
 	}
 
 

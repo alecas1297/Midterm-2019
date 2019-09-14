@@ -2,6 +2,8 @@ package design;
 
 public abstract class EmployeeAbstractClass implements Employee {
 
+    public abstract void vacation();
+
     public int employeeId() {
         System.out.println("Employee Id");
 
@@ -17,5 +19,6 @@ public abstract class EmployeeAbstractClass implements Employee {
         System.out.println("Employee Department");
 
     }
+
 
 }

@@ -23,13 +23,16 @@ public class FortuneEmployee {
 		EmployeeInfo employee2 = new EmployeeInfo("Gabriela Jaquez", 456);
 		employee1.assignDepartment("Developer");
 		employee2.assignDepartment("QA");
-		employee1.setSalary(150000);
+		employee1.setSalary(150000.00);
 		employee1.calculateSalary(employee1.getSalary());
-		employee2.setSalary(120000);
+		employee2.setSalary(120000.00);
 		employee2.calculateSalary(employee2.getSalary());
 		employee1.setPerformance(5);
 
-		EmployeeInfo.calculateEmployeePension((int) employee1.getSalary());
+		System.out.println(employee1.calculateEmployeeBonus(150000,5));
+		System.out.println(employee1.calculateEmployeePension(150000));
+
+
 
 		Map<Integer, List<Object>> employeeInfo = new HashMap<Integer, List<Object>>();
 		List<Object> employeeRecord123 = new ArrayList<Object>();
@@ -44,6 +47,7 @@ public class FortuneEmployee {
 
 		employeeInfo.put(123, employeeRecord123);
 		employeeInfo.put(456, employeeRecord456);
+
 
 
 

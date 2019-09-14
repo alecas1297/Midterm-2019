@@ -25,7 +25,7 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="4bf0f6e5-ba13-4049-94a9-df07b6d2f9b7">
-        <schema name="midterm" object-types="table, procedure, view, function" />
+        <schema name="midterm" object-types="function, table, procedure, view" />
       </connection>
     </loaded-nodes>
   </component>

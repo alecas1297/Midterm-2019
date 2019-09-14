@@ -15,27 +15,32 @@ public class PrimeNumber {
 		 * Use any databases[MongoDB, Oracle, MySql] to store data and retrieve data.
 		 *
 		 */
-		System.out.println("Enter max number: ");
-
-		String input = scanner.nextLine();
-		int maxNumber = Integer.parseInt( input );
-
-		System.out.println("List of the prime number between 2 - " + maxNumber);
-
-		for (int num = 2; num <= maxNumber; num++) {
-			boolean isPrime = true;
-			for (int i=2; i <= num/2; i++) {
-				if ( num % i == 0) {
-					isPrime = false;
-					break;
+		int counter = 0;
+		for(int i=2; i<1000000; i++) {
+			if (i == 2) {
+				System.out.println(i);
+			} else {
+				if (isPrime(i)) {
+					counter++;
+					System.out.println(i);
+				} else {
 				}
+
 			}
-
-			if ( isPrime == true )
-				System.out.println(num);
 		}
-
-
+		System.out.println("total number of Prime numbers so far = " + counter);
 	}
+
+	public static boolean isPrime(int n){
+		if(n%2==0)return false;
+		for(int i =3; i*i<=n; i+=2){
+			if (n%i==0) return false;
+		}
+		return true;
+	}
+
+
+
+
 
 }

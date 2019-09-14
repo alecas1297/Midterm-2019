@@ -1,5 +1,6 @@
 package datastructure;
 
+import databases.ConnectToMongoDB;
 import databases.ConnectToSqlDB;
 
 import java.util.ArrayList;
@@ -42,6 +43,8 @@ public class UseArrayList {
 			Object elements = itr.next();
 			System.out.println(elements + " ");
 		}
+		ConnectToMongoDB connect = new ConnectToMongoDB();
+
 
 	}
 
